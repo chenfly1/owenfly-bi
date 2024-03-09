@@ -1,0 +1,112 @@
+@import '~antd/es/style/themes/default.less';
+
+.head {
+  position: relative;
+}
+.portal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  .title {
+    color: #fff;
+    font-weight: 600;
+    font-size: 30px;
+    font-family: MiSans-Demibold, MiSans;
+  }
+}
+
+:global {
+  .ant-carousel .slick-dots-bottom {
+    bottom: -18px !important;
+  }
+  .ant-carousel .slick-dots li {
+    width: 15px !important;
+    height: 15px !important;
+    margin: 0 !important;
+  }
+  .ant-carousel .slick-dots li button::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 10px !important;
+    height: 10px !important;
+    background-color: #5b0eb6;
+    border-radius: 50%;
+    content: '';
+  }
+  .ant-select-show-search.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    border-radius: 20px;
+  }
+}
+
+.leftcol {
+  display: inline-block;
+  width: 5px;
+  height: 16px;
+  background-color: #5b0eb6;
+  border-radius: 5px;
+}
+.carousel {
+  margin-top: 20px;
+}
+.flex_item {
+  flex: 1;
+  text-align: center;
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin: 0 auto;
+    .left {
+      flex: 1;
+      text-align: left;
+    }
+    .right {
+      width: 70px;
+      color: #b9b9b9;
+    }
+  }
+}
+
+.col {
+  padding: 20px 50px;
+  text-align: center;
+  .cols {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+.flo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.leftButton,
+.rightButton {
+  position: absolute;
+  top: 40%;
+  z-index: 10;
+  width: 36px;
+  height: 36px;
+  color: #f00;
+  background-color: #001529;
+  border: none;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  opacity: 0.3;
+  transition: 1s;
+}
+
+.leftButton:hover,
+.rightButton:hover {
+  opacity: 1;
+}
